@@ -1,0 +1,134 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background: #DDDDDD;
+    color: #222222;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 0 20%;
+}
+
+/* Header Styles */
+
+header {
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+header nav {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav menu li {
+   display: inline; 
+   padding: 0 0.75rem;
+}
+
+/* Main styles */
+main {
+    color: #444;
+    padding: 2em;
+}
+
+main h2 {
+    font-size: 2.75rem;
+    font-weight: normal;
+    letter-spacing: 0.25rem;
+    padding: 0;
+}
+
+main .post-meta {
+    color: #888888;
+    font-size: 0.8125rem;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    padding: 0 0 1.5rem 0;
+}
+
+main p {
+    padding: 0 0 0.75rem 0;
+}
+
+main a {
+    font-weight: 520;
+    text-decoration: none;
+}
+
+main a:link {
+}
+
+main a:visited {
+    background: #EEEEEE;
+    border-radius: 4px;
+}
+
+main a:focus {
+    background: #AAAAAA;
+    border-radius: 4px;
+}
+
+main a:hover {
+    background: #AAAAAA;
+    border-radius: 4px;
+}
+
+main a:active {
+}
+
+main blockquote {
+    background: #EEEEEE;
+    border-radius: 6px;
+    margin: 1.5rem;
+    padding: 1.5rem;
+}
+
+main ul, ol {
+    list-style-position: inside;
+    padding: 0 0 0.75rem 0.75rem;
+}
+
+main ul ul, main ol ol {
+    list-style-position: inside;
+    padding: 0 0 0 0.75rem;
+}
+
+main ul li, main ol li {
+    padding: 0 0 0.25rem 0;
+}
+
+main img{ 
+    border-radius: 6px;
+    margin: 1.5rem;
+}
+
+main img.center{
+    display: block;
+    margin: 1.5rem auto;
+    width: 400px;
+}
+
+main img.left {
+    float: left;
+}
+
+main img.right {
+    float: right;
+}
+
+/* Footer styles */
+footer {
+    clear: both;
+    padding: 4rem 2rem;
+    text-align: center;
+}
