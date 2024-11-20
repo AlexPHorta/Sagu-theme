@@ -9,8 +9,8 @@ body {
     padding: 0 20%;
 }
 
-/* Header Styles */
 
+/* Header Styles */
 header {
     padding: 2rem;
 }
@@ -32,8 +32,33 @@ header nav menu {
 
 header nav menu li {
    display: inline; 
-   padding: 0 0.75rem;
 }
+
+menu li a {
+    font-weight: 520;
+    padding: 0.125rem 1rem;
+    text-decoration: none;
+}
+
+menu li a:link { }
+
+menu li a:visited {
+    background: #EEEEEE;
+    border-radius: 4px;
+}
+
+menu li a:focus {
+    background: #AAAAAA;
+    border-radius: 4px;
+}
+
+menu li a:hover {
+    background: #AAAAAA;
+    border-radius: 4px;
+}
+
+menu li a:active { }
+
 
 /* Main styles */
 main {
@@ -42,11 +67,22 @@ main {
 }
 
 main h2 {
-    font-size: 2.75rem;
+    font-size: 1.75rem;
     font-weight: normal;
     letter-spacing: 0.25rem;
     padding: 0;
 }
+
+main h3, main h4, main h5, main h6 {
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    padding: 0 0 0.5rem 0;
+}
+
+main h3 { font-size: 1.5rem; }
+main h4 { font-size: 1.375rem; }
+main h5 { font-size: 1.25rem; }
+main h6 { font-size: 1.125rem; }
 
 main .post-meta {
     color: #888888;
@@ -65,8 +101,7 @@ main a {
     text-decoration: none;
 }
 
-main a:link {
-}
+main a:link { }
 
 main a:visited {
     background: #EEEEEE;
@@ -83,14 +118,15 @@ main a:hover {
     border-radius: 4px;
 }
 
-main a:active {
-}
+main a:active { }
 
 main blockquote {
     background: #EEEEEE;
+    border-left: 0.5rem solid #FFFFFF;
     border-radius: 6px;
     margin: 1.5rem;
     padding: 1.5rem;
+    font-style: italic;
 }
 
 main ul, ol {
@@ -113,18 +149,23 @@ main img{
 }
 
 main img.center{
+    border-left: 0.5rem solid #FFFFFF;
+    border-right: 0.5rem solid #FFFFFF;
     display: block;
     margin: 1.5rem auto;
     width: 400px;
 }
 
 main img.left {
+    border-right: 0.5rem solid #FFFFFF;
     float: left;
 }
 
 main img.right {
+    border-left: 0.5rem solid #FFFFFF;
     float: right;
 }
+
 
 /* Footer styles */
 footer {
