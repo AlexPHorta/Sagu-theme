@@ -143,27 +143,52 @@ main ul li, main ol li {
     padding: 0 0 0.25rem 0;
 }
 
-main img{ 
-    border-radius: 6px;
+main figure {
     margin: 1.5rem;
+    text-align:center
 }
 
-main img.center{
-    border-left: 0.5rem solid #FFFFFF;
-    border-right: 0.5rem solid #FFFFFF;
+main figure figcaption {
+    font-style: italic;
+}
+
+main figure>img { 
+    border-radius: 6px;
+}
+
+main figure.landscape>img {
+    width: 35rem;
+}
+
+main figure.portrait>img {
+    width: 30rem;
+}
+
+main figure.center {
     display: block;
-    margin: 1.5rem auto;
-    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-main img.left {
-    border-right: 0.5rem solid #FFFFFF;
+main figure.left {
     float: left;
 }
 
-main img.right {
-    border-left: 0.5rem solid #FFFFFF;
+main figure.right {
     float: right;
+}
+
+main figure.center>img {
+    border-left: 0.5rem solid #FFFFFF;
+    border-right: 0.5rem solid #FFFFFF;
+}
+
+main figure.left>img {
+    border-right: 0.5rem solid #FFFFFF;
+}
+
+main figure.right>img {
+    border-left: 0.5rem solid #FFFFFF;
 }
 
 
