@@ -5,10 +5,18 @@ html {
 body {
     background: #DDDDDD;
     color: #222222;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
     padding: 0 20%;
 }
 
+hr.style14 { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #DDDDDD, #CCC9C9, #DDDDDD);
+  background-image: -moz-linear-gradient(left, #DDDDDD, #CCC9C9, #DDDDDD);
+  background-image: -ms-linear-gradient(left, #DDDDDD, #CCC9C9, #DDDDDD);
+  background-image: -o-linear-gradient(left, #DDDDDD, #CCC9C9, #DDDDDD); 
+}
 
 /* Header Styles */
 header {
@@ -16,6 +24,7 @@ header {
 }
 
 header h1 {
+    color: #7E0B33;
     font-size: 3rem;
     text-align: center;
 }
@@ -35,25 +44,26 @@ header nav menu li {
 }
 
 menu li a {
+    color: #096436;
     font-weight: 520;
     padding: 0.125rem 1rem;
     text-decoration: none;
+    transition: background 300ms linear;
 }
 
 menu li a:link { }
 
 menu li a:visited {
-    background: #EEEEEE;
     border-radius: 4px;
 }
 
 menu li a:focus {
-    background: #AAAAAA;
+    background: #CCCCCC;
     border-radius: 4px;
 }
 
 menu li a:hover {
-    background: #AAAAAA;
+    background: #CCCCCC;
     border-radius: 4px;
 }
 
@@ -74,15 +84,19 @@ main h2 {
 }
 
 main h3, main h4, main h5, main h6 {
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 0.25rem;
-    padding: 0 0 0.5rem 0;
+    padding: 1rem 0 0.5rem 0;
 }
 
 main h3 { font-size: 1.5rem; }
 main h4 { font-size: 1.375rem; }
 main h5 { font-size: 1.25rem; }
 main h6 { font-size: 1.125rem; }
+
+main h2, main h3, main h4, main h5, main h6 {
+    color: #7E0B33;
+}
 
 main .post-meta {
     color: #888888;
@@ -97,24 +111,26 @@ main p {
 }
 
 main a {
+    color: #9E224E;
     font-weight: 520;
     text-decoration: none;
+    transition: background 300ms linear;
 }
 
 main a:link { }
 
 main a:visited {
-    background: #EEEEEE;
+    color: rgb(89, 102, 9);
     border-radius: 4px;
 }
 
 main a:focus {
-    background: #AAAAAA;
+    background: #CCCCCC;
     border-radius: 4px;
 }
 
 main a:hover {
-    background: #AAAAAA;
+    background: #E1E6CF;
     border-radius: 4px;
 }
 
@@ -198,3 +214,29 @@ footer {
     padding: 4rem 2rem;
     text-align: center;
 }
+
+footer a {
+    color: #9E224E;
+    font-weight: 520;
+    text-decoration: none;
+    transition: background 300ms linear;
+}
+
+footer a:link { }
+
+footer a:visited {
+    color: rgb(89, 102, 9);
+    border-radius: 4px;
+}
+
+footer a:focus {
+    background: #CCCCCC;
+    border-radius: 4px;
+}
+
+footer a:hover {
+    background: #E1E6CF;
+    border-radius: 4px;
+}
+
+footer a:active { }
