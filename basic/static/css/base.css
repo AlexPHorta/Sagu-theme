@@ -48,26 +48,32 @@ menu li a {
     font-weight: 520;
     padding: 0.125rem 1rem;
     text-decoration: none;
-    transition: background 300ms linear;
+    transition: background 600ms linear;
 }
 
-menu li a:link { }
+menu li a:link {
+    border-radius: 4px;
+}
 
 menu li a:visited {
     border-radius: 4px;
 }
 
 menu li a:focus {
-    background: #CCCCCC;
+    color: #CCFFE5;
+    background: #999999;
     border-radius: 4px;
 }
 
 menu li a:hover {
-    background: #CCCCCC;
+    color: #CCFFE5;
+    background: #999999;
     border-radius: 4px;
 }
 
-menu li a:active { }
+menu li a:active {
+    border-radius: 4px;
+}
 
 
 /* Main styles */
@@ -115,6 +121,7 @@ main a {
     font-weight: 520;
     text-decoration: none;
     transition: background 300ms linear;
+    transition: font-size 300ms linear;
 }
 
 main a:link { }
@@ -127,11 +134,17 @@ main a:visited {
 main a:focus {
     background: #CCCCCC;
     border-radius: 4px;
+    font-size: 1.01rem;
+    transition: background 300ms linear;
+    transition: font-size 300ms linear;
 }
 
 main a:hover {
     background: #E1E6CF;
     border-radius: 4px;
+    font-size: 1.01rem;
+    transition: background 300ms linear;
+    transition: font-size 300ms linear;
 }
 
 main a:active { }
@@ -144,6 +157,34 @@ main blockquote {
     padding: 1.5rem;
     font-style: italic;
 }
+
+main ul#breadcrumb {
+    font-size: 0.9rem;
+    font-style: italic;
+    list-style-position: inside;
+    opacity: 0.7;
+}
+
+main ul#breadcrumb li {
+    display: inline;
+}
+
+main ul#breadcrumb li::before {
+    color: #B93E69;
+    content: ">";
+    padding: 0 0.4rem;
+}
+
+main ul#breadcrumb li:first-child::before {
+    content: revert;
+}
+
+main ul#breadcrumb li a:focus,
+main ul#breadcrumb li a:hover {
+    font-size: 0.91rem;
+    opacity: 1;
+}
+
 
 main ul, ol {
     list-style-position: inside;
@@ -220,6 +261,7 @@ footer a {
     font-weight: 520;
     text-decoration: none;
     transition: background 300ms linear;
+    transition: font-size 300ms linear;
 }
 
 footer a:link { }
@@ -232,11 +274,17 @@ footer a:visited {
 footer a:focus {
     background: #CCCCCC;
     border-radius: 4px;
+    font-size: 1.04rem;
+    transition: background 300ms linear;
+    transition: font-size 300ms linear;
 }
 
 footer a:hover {
     background: #E1E6CF;
     border-radius: 4px;
+    font-size: 1.02rem;
+    transition: background 300ms linear;
+    transition: font-size 300ms linear;
 }
 
 footer a:active { }
